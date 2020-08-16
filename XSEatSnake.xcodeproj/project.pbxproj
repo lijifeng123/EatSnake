@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6400CF824E8FB7C00F74F21 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = C6400CF724E8FB7C00F74F21 /* Node.m */; };
+		C6400CFB24E8FB8700F74F21 /* Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = C6400CFA24E8FB8700F74F21 /* Snake.m */; };
+		C6400CFE24E8FB9B00F74F21 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6400CFD24E8FB9B00F74F21 /* GameView.m */; };
 		C66C162724E4EA54007B9868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C66C162624E4EA54007B9868 /* AppDelegate.m */; };
 		C66C162A24E4EA54007B9868 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C66C162924E4EA54007B9868 /* SceneDelegate.m */; };
 		C66C162D24E4EA54007B9868 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C66C162C24E4EA54007B9868 /* ViewController.m */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6400CF624E8FB7C00F74F21 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		C6400CF724E8FB7C00F74F21 /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		C6400CF924E8FB8700F74F21 /* Snake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snake.h; sourceTree = "<group>"; };
+		C6400CFA24E8FB8700F74F21 /* Snake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
+		C6400CFC24E8FB9B00F74F21 /* GameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		C6400CFD24E8FB9B00F74F21 /* GameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		C66C162224E4EA54007B9868 /* XSEatSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSEatSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66C162524E4EA54007B9868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C66C162624E4EA54007B9868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +119,12 @@
 				C66C162924E4EA54007B9868 /* SceneDelegate.m */,
 				C66C162B24E4EA54007B9868 /* ViewController.h */,
 				C66C162C24E4EA54007B9868 /* ViewController.m */,
+				C6400CF624E8FB7C00F74F21 /* Node.h */,
+				C6400CF724E8FB7C00F74F21 /* Node.m */,
+				C6400CF924E8FB8700F74F21 /* Snake.h */,
+				C6400CFA24E8FB8700F74F21 /* Snake.m */,
+				C6400CFC24E8FB9B00F74F21 /* GameView.h */,
+				C6400CFD24E8FB9B00F74F21 /* GameView.m */,
 				C66C162E24E4EA54007B9868 /* Main.storyboard */,
 				C66C163124E4EA56007B9868 /* Assets.xcassets */,
 				C66C163324E4EA56007B9868 /* LaunchScreen.storyboard */,
@@ -267,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6400CFB24E8FB8700F74F21 /* Snake.m in Sources */,
+				C6400CF824E8FB7C00F74F21 /* Node.m in Sources */,
 				C66C162D24E4EA54007B9868 /* ViewController.m in Sources */,
 				C66C162724E4EA54007B9868 /* AppDelegate.m in Sources */,
 				C66C163824E4EA56007B9868 /* main.m in Sources */,
 				C66C162A24E4EA54007B9868 /* SceneDelegate.m in Sources */,
+				C6400CFE24E8FB9B00F74F21 /* GameView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +459,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XSEatSnake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XSEatSnake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
