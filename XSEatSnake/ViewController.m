@@ -13,12 +13,12 @@
 #define KSCREENWIDTH [UIScreen mainScreen].bounds.size.width  //屏宽
 #define KSCREENHEIGHT [UIScreen mainScreen].bounds.size.height  //屏高
 #define LEVELCOUNT 3  //满多少分升1级
-#define MAXLEVEL 8   //最高多多少级
+#define MAXLEVEL 9   //最高多多少级
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet GameView *gameView;
 @property (strong, nonatomic) Snake *snake;
-@property (strong, nonatomic) UIImageView *food;
+@property (strong, nonatomic) UILabel *food;
 @property (weak, nonatomic) IBOutlet UIButton *startBtn;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *levelLabel;
@@ -42,9 +42,12 @@
 }
 
 - (void)createFood{
-    int x = (arc4random() % 20) * NODEWIDTH + NODEWIDTH * 0.5;
-    int y = (arc4random() % 30) * NODEWIDTH + NODEWIDTH * 0.5;
-    CGPoint center = CGPointMake(x, y);
+    
+    int horizontalCount = (KSCREENWIDTH - 120) / NODEWIDTH;
+    int verticalCount = 480 / NODEWIDTH;
+    int centerX = (arc4random() % horizontalCount) * NODEWIDTH + NODEWIDTH * 0.5;
+    int centerY = (arc4random() % verticalCount) * NODEWIDTH + NODEWIDTH * 0.5;
+    CGPoint center = CGPointMake(centerX, centerY);
     for (Node *node in _snake.nodes) {
         if (CGPointEqualToPoint(node.coordinate, center)) {
             [self createFood];
@@ -75,10 +78,10 @@
             [self gameOver];
         }
     }
-    if (headNode.coordinate.x < 5 || headNode.coordinate.x > KSCREENWIDTH - 60 * 2 - 5) {
+    if (headNode.coordinate.x < NODEWIDTH / 2 || headNode.coordinate.x > KSCREENWIDTH - 60 * 2 - NODEWIDTH / 2) {
         [self gameOver];
     }
-    if (headNode.coordinate.y < 5 || headNode.coordinate.y > 480 - 5) {
+    if (headNode.coordinate.y < NODEWIDTH / 2 || headNode.coordinate.y > 480 - NODEWIDTH / 2) {
         [self gameOver];
     }
 }
@@ -128,10 +131,11 @@
     sender.selected = !sender.selected;
 }
 
-- (UIImageView *)food{
+- (UILabel *)food{
     if (!_food) {
-        _food = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_星星2"]];
-        _food.frame = CGRectMake(0, 0, NODEWIDTH, NODEWIDTH);
+        _food = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, NODEWIDTH, NODEWIDTH)];
+        _food.font = [UIFont systemFontOfSize:14];
+        _food.text = @"🍎";
         [_gameView addSubview:_food];
     }
     return _food;

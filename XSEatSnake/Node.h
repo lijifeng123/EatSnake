@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define NODEWIDTH 10
+#define NODEWIDTH 20
 
 NS_ASSUME_NONNULL_BEGIN
 

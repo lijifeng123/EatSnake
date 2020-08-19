@@ -45,7 +45,7 @@
 		C6400CFA24E8FB8700F74F21 /* Snake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
 		C6400CFC24E8FB9B00F74F21 /* GameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		C6400CFD24E8FB9B00F74F21 /* GameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
-		C66C162224E4EA54007B9868 /* XSEatSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSEatSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66C162224E4EA54007B9868 /* 贪吃蛇.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "贪吃蛇.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66C162524E4EA54007B9868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C66C162624E4EA54007B9868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C66C162824E4EA54007B9868 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		C66C162324E4EA54007B9868 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C66C162224E4EA54007B9868 /* XSEatSnake.app */,
+				C66C162224E4EA54007B9868 /* 贪吃蛇.app */,
 				C66C163D24E4EA56007B9868 /* XSEatSnakeTests.xctest */,
 				C66C164824E4EA56007B9868 /* XSEatSnakeUITests.xctest */,
 			);
@@ -169,7 +169,7 @@
 			);
 			name = XSEatSnake;
 			productName = XSEatSnake;
-			productReference = C66C162224E4EA54007B9868 /* XSEatSnake.app */;
+			productReference = C66C162224E4EA54007B9868 /* 贪吃蛇.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C66C163C24E4EA56007B9868 /* XSEatSnakeTests */ = {
@@ -458,14 +458,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EGTTCNBDA8;
 				INFOPLIST_FILE = XSEatSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dsafadsfdas.XSEatSnake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxx.hhh;
+				PRODUCT_NAME = "贪吃蛇";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -475,14 +476,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EGTTCNBDA8;
 				INFOPLIST_FILE = XSEatSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dsafadsfdas.XSEatSnake;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxx.hhh;
+				PRODUCT_NAME = "贪吃蛇";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

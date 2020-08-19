@@ -32,7 +32,7 @@
 }
 
 - (void)start{
-    float time = 0.2 - _speed * 0.02;
+    float time = 0.5 - _speed * 0.05;
     __weak typeof(self) weakSelf = self;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:time repeats:YES block:^(NSTimer * _Nonnull timer) {
         [weakSelf move];

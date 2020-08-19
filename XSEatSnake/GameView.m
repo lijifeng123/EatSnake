@@ -24,7 +24,7 @@
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [self drawHead:bezierPath center:center];
     [bezierPath setLineWidth:1];
-    [[UIColor purpleColor] set];
+    [[UIColor orangeColor] set];
     [bezierPath fill];
     
     CGRect nodeRect = CGRectZero;
@@ -32,7 +32,8 @@
         center = _snake.nodes[i].coordinate;
         nodeRect = CGRectMake(center.x - NODEWIDTH/2, center.y - NODEWIDTH/2, NODEWIDTH, NODEWIDTH);
         bezierPath = [UIBezierPath bezierPathWithOvalInRect:nodeRect];
-        [[UIColor yellowColor] setFill];
+        UIColor *snakeBodyColor = [UIColor colorWithRed:130/255.0 green:190/255.0 blue:235/255.0 alpha:1];
+        [snakeBodyColor setFill];
         [bezierPath fill];
     }
 }

@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 移动的方向 */
 @property (assign, nonatomic) MoveDirection direction;
 /** 每走一步的回调 */
-@property (copy, nonatomic) void (^moveFinishBlock)();
+@property (copy, nonatomic) void (^moveFinishBlock)(void);
 
 + (instancetype)snake;
 - (void)start;
