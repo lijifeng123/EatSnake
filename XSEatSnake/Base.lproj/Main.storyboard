@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,8 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="OJv-SM-JgZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background4" translatesAutoresizingMaskIntoConstraints="NO" id="OJv-SM-JgZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="519"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="519" id="DpE-IA-oGc"/>
                                 </constraints>
@@ -132,31 +134,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最高分:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pI-7f-Cka">
-                                <rect key="frame" x="10" y="544" width="57" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="Kde-EH-HqS"/>
-                                    <constraint firstAttribute="height" constant="21" id="zzz-d4-rbq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-OH-dAq">
-                                <rect key="frame" x="70" y="544" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="PGN-tc-fTY"/>
-                                    <constraint firstAttribute="width" constant="42" id="wBJ-B2-SDG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sxf-Rd-iTF" firstAttribute="top" secondItem="8Rb-Ap-3Nx" secondAttribute="bottom" constant="11.67" id="0Rx-sI-4rq"/>
-                            <constraint firstItem="wbg-OH-dAq" firstAttribute="leading" secondItem="7pI-7f-Cka" secondAttribute="trailing" constant="3" id="4S2-zx-ATZ"/>
                             <constraint firstItem="rvz-tB-l54" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="4zO-z6-ihD"/>
                             <constraint firstItem="sxf-Rd-iTF" firstAttribute="centerX" secondItem="T9q-u9-rgI" secondAttribute="centerX" id="8RD-K6-qSL"/>
                             <constraint firstItem="T9q-u9-rgI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8r4-Sc-M0b"/>
@@ -170,15 +151,12 @@
                             <constraint firstItem="OJv-SM-JgZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QlE-6D-lps"/>
                             <constraint firstItem="T9q-u9-rgI" firstAttribute="top" secondItem="OJv-SM-JgZ" secondAttribute="bottom" id="Sr6-03-JbQ"/>
                             <constraint firstItem="Jiz-Nd-KbB" firstAttribute="centerX" secondItem="sxf-Rd-iTF" secondAttribute="centerX" id="ToT-2R-wBI"/>
-                            <constraint firstItem="7pI-7f-Cka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Xvv-94-49g"/>
                             <constraint firstItem="4y1-en-Vk6" firstAttribute="centerY" secondItem="sxf-Rd-iTF" secondAttribute="centerY" id="aRx-Zc-Ltr"/>
                             <constraint firstItem="MTm-d0-a8C" firstAttribute="centerY" secondItem="sxf-Rd-iTF" secondAttribute="centerY" id="cZB-Mj-CWg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="No3-SL-BfM" secondAttribute="bottom" constant="20" id="f0U-ih-BUN"/>
-                            <constraint firstItem="wbg-OH-dAq" firstAttribute="top" secondItem="OJv-SM-JgZ" secondAttribute="bottom" constant="25" id="hDd-EO-H2r"/>
                             <constraint firstItem="No3-SL-BfM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="jWr-GQ-fYf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9oD-zs-sYk" secondAttribute="bottom" constant="20" id="l9U-1z-Uzc"/>
                             <constraint firstItem="rvz-tB-l54" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lH6-J8-xeo"/>
-                            <constraint firstItem="7pI-7f-Cka" firstAttribute="top" secondItem="OJv-SM-JgZ" secondAttribute="bottom" constant="25" id="mAB-AL-c6g"/>
                             <constraint firstItem="sxf-Rd-iTF" firstAttribute="leading" secondItem="MTm-d0-a8C" secondAttribute="trailing" constant="12" id="orw-1g-Z1H"/>
                             <constraint firstItem="4y1-en-Vk6" firstAttribute="leading" secondItem="sxf-Rd-iTF" secondAttribute="trailing" constant="12" id="qs0-z2-6Xw"/>
                             <constraint firstItem="mQM-3P-hQX" firstAttribute="leading" secondItem="7vq-sh-wJH" secondAttribute="trailing" constant="15" id="ub2-pB-Xbm"/>
@@ -204,7 +182,7 @@
     </scenes>
     <resources>
         <image name="background1" width="350" height="259"/>
-        <image name="background2" width="500" height="341"/>
+        <image name="background4" width="658" height="283"/>
         <image name="down" width="878" height="1024"/>
         <image name="left" width="1024" height="878"/>
         <image name="right" width="1024" height="878"/>

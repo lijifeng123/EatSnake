@@ -24,7 +24,7 @@
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [self drawHead:bezierPath center:center];
     [bezierPath setLineWidth:1];
-    [[UIColor orangeColor] set];
+    [[UIColor redColor] set];
     [bezierPath fill];
     
     CGRect nodeRect = CGRectZero;

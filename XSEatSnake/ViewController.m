@@ -51,6 +51,7 @@
     for (Node *node in _snake.nodes) {
         if (CGPointEqualToPoint(node.coordinate, center)) {
             [self createFood];
+            return;
         }
     }
     self.food.center = center;
@@ -88,9 +89,8 @@
 
 - (void)gameOver{
     [_snake pause];
-    NSString *message = [NSString stringWithFormat:@"干得漂亮，总得分为：%@",_scoreLabel.text];
-    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
-    
+    NSString *message = [NSString stringWithFormat:@"总得分为：%@",_scoreLabel.text];
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"干得漂亮" message:message preferredStyle:UIAlertControllerStyleAlert];
     __weak typeof(self) weakSelf = self;
     UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"重来一局" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         weakSelf.scoreLabel.text = @"0";
@@ -98,12 +98,10 @@
         [weakSelf createFood];
         [weakSelf.snake reset];
     }];
-    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         weakSelf.startBtn.selected = NO;
         weakSelf.isGameOver = YES;
     }];
-    
     [alertVC addAction:sureAction];
     [alertVC addAction:cancelAction];
     [self presentViewController:alertVC animated:YES completion:nil];
@@ -139,6 +137,11 @@
         [_gameView addSubview:_food];
     }
     return _food;
+}
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end
