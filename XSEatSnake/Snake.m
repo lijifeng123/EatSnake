@@ -24,7 +24,7 @@
 
 - (void)initBody{
     [self.nodes removeAllObjects];
-    for (int i = 4 ; i >= 0; i --) {
+    for (int i = 10 ; i >= 0; i --) {
         CGPoint point = CGPointMake(NODEWIDTH * (i + 0.5), NODEWIDTH * 0.5);
         [self.nodes addObject:[Node nodeWithCoodinate:point]];
     }

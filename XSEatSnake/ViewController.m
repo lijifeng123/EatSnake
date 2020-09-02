@@ -12,7 +12,7 @@
 
 #define KSCREENWIDTH [UIScreen mainScreen].bounds.size.width  //屏宽
 #define KSCREENHEIGHT [UIScreen mainScreen].bounds.size.height  //屏高
-#define LEVELCOUNT 3  //满多少分升1级
+#define LEVELCOUNT 2  //满多少分升1级
 #define MAXLEVEL 9   //最高多多少级
 
 @interface ViewController ()
